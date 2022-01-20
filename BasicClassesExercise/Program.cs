@@ -7,15 +7,12 @@ namespace BasicClassesExercise
     {
         static void Main(string[] args)
         {
-            Car myCar = new Car();
-            myCar.IsTheLatestModel = true;
-            myCar.Make = "Toyota";
-            myCar.Model = "4Runner";
-            myCar.Year = 2021;
+            var toyota = new Car(); 
+            toyota.Year = 2021;
+            toyota.Make = "Toyota";
+            toyota.Model = "4Runner";
 
-            myCar.MyNewCar();
-
-
+            Console.WriteLine($"{toyota.Year} {toyota.Make} {toyota.Model}");
 
         }
     }
